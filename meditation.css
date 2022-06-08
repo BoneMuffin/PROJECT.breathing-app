@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#ffff;
+    background: url(https://thumbs.gfycat.com/OpulentElementaryIndianabat-size_restricted.gif);
+    background-size:cover;
+}
+
+body::after {
+    content: "";
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color: rgb(0,0,0,.6);
+    z-index: -1;
+}
+
+.input {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.input label {
+    text-align:center;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.input select {
+    border:none;
+    border-radius: 8px;
+    width: 300px;
+    font-size: 16px;
+    padding: 8px 4px;
+    background-color: #01002c;
+    color:white;
+}
+
+.input select:focus {
+ outline:none;
+}
+
+.circle-wrap{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.circle-outline {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 15px solid #f1f1f1;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.circle-progress {
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    background-color: rgb(0, 204, 245);
+    border-radius: 50%;
+    transition: 4s ease all;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.circle-grow {
+    transform: scale(5.3);
+}
+
+.breaths {
+    text-align:center;
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+.instructions {
+    text-align: center;
+    margin-bottom: 32px;;
+}
+
+button {
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: #01002c ;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+button:hover{
+    background-color: #f1f1f1;
+    color:#01002c;
+}
+
+.button-inactive {
+    pointer-events: none;
+    background-color: #969696;
+}
+
+
+.quote-anchor {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap:16px;
+  color:white;
+  text-decoration: none;
+}
+
+a:hover{ 
+    color:rgb(211, 192, 183);
+    text-decoration:none;
+    text-decoration: underline;
+    filter: brightness(150%);
+    filter: drop-shadow(8px 8px 10px white);
+  }
+
+  /* navigation bar styles */
+
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .menu-button {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background-color: #01002c;
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px; 
+    text-decoration:none; 
+    display:inline-block;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    color: #FFFFFF;
+  }
